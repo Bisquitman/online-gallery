@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="./assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicons -->
+
+  <link rel="stylesheet" href="style/index.css">
+  <script src="./js/masonry.pkgd.min.js" defer></script>
+  <script src="./js/index.js" type="module"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <img class="header__logo" src="img/logo.svg" alt="Логотип галереи">
+      <button class="header__login-button"></button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="gallery">
+      <div class="container gallery__wrapper">
+        <!-- <ul class="grid" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 30px;">
+          <li class="card" style="min-height: 300px;"><a id="BZnPqlIl5pk" class="grid-item"
+              href="page.html?photo=BZnPqlIl5pk"><img width="200"
+                src="https://images.unsplash.com/photo-1654507666453-ec3e281b146c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzMDE0MzF8MHwxfGFsbHw4fHx8fHx8Mnx8MTY1NDUyMzcxMA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=400"
+                alt="null">
+              <a class="card__author" href="#">
+                <img class="author__photo"
+                  src="https://images.unsplash.com/profile-1639410901867-5932bcc818ccimage?ixlib=rb-1.2.1&amp;crop=faces&amp;fit=crop&amp;w=32&amp;h=32"
+                  width="32" height="32" role="presentation"
+                  alt="I mainly do editorial shoots, but always with human elements. I believe that adding a human element to an art concept is the most organic way to represent our touch in the world."
+                  title="Chandri Anggara">
+              </a>
+              <button class="card__photo-like">2</button>
+              <a class="card__download"
+                href="https://unsplash.com/photos/BZnPqlIl5pk/download?ixid=MnwzMDE0MzF8MHwxfGFsbHw4fHx8fHx8Mnx8MTY1NDUyMzcxMA"
+                download="" target="_blank"></a>
+            </a>
+          </li>
+          <li class="card" style="min-height: 300px;"><a id="1Er6ZqGPhgw" class="grid-item"
+              href="page.html?photo=1Er6ZqGPhgw"><img width="200"
+                src="https://images.unsplash.com/photo-1654447398834-4168622aab14?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzMDE0MzF8MHwxfGFsbHwyOHx8fHx8fDJ8fDE2NTQ1MjM3MTA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=400"
+                alt="null">
+              <a class="card__author" href="#">
+                <img class="author__photo"
+                  src="https://images.unsplash.com/profile-1644757420917-27103c7ddfc1image?ixlib=rb-1.2.1&amp;crop=faces&amp;fit=crop&amp;w=32&amp;h=32"
+                  width="32" height="32" role="presentation" alt="null" title="Martin Błaszkiewicz">
+              </a>
+              <button class="card__photo-like">9</button>
+              <a class="card__download"
+                href="https://unsplash.com/photos/1Er6ZqGPhgw/download?ixid=MnwzMDE0MzF8MHwxfGFsbHwyOHx8fHx8fDJ8fDE2NTQ1MjM3MTA"
+                download="" target="_blank"></a>
+            </a></li>
+          <li class="card" style="min-height: 300px;"><a id="Pmq77M23eU8" class="grid-item"
+              href="page.html?photo=Pmq77M23eU8"><img width="200"
+                src="https://images.unsplash.com/photo-1654124803057-a07f6323a147?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzMDE0MzF8MHwxfGFsbHw2Mnx8fHx8fDJ8fDE2NTQ1MjQyNDQ&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=400"
+                alt="null">
+              <a class="card__author" href="#">
+                <img class="author__photo"
+                  src="https://images.unsplash.com/profile-1622557902046-f9acff817916image?ixlib=rb-1.2.1&amp;crop=faces&amp;fit=crop&amp;w=32&amp;h=32"
+                  width="32" height="32" role="presentation"
+                  alt="saved by grace // UX Design Manager // hobby photographer" title="Kelly Sikkema">
+              </a>
+              <button class="card__photo-like">16</button>
+              <a class="card__download"
+                href="https://unsplash.com/photos/Pmq77M23eU8/download?ixid=MnwzMDE0MzF8MHwxfGFsbHw2Mnx8fHx8fDJ8fDE2NTQ1MjQyNDQ"
+                download="" target="_blank"></a>
+            </a></li>
+          <li class="card" style="min-height: 300px;"><a id="JIqH1ps4eK8" class="grid-item"
+              href="page.html?photo=JIqH1ps4eK8"><img width="200"
+                src="https://images.unsplash.com/photo-1654363137357-9d897b5a20d7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=MnwzMDE0MzF8MHwxfGFsbHwxMjN8fHx8fHwyfHwxNjU0NTI0MjYy&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=400"
+                alt="null">
+              <a class="card__author" href="#">
+                <img class="author__photo"
+                  src="https://images.unsplash.com/profile-1600184424687-de96bd61fa67image?ixlib=rb-1.2.1&amp;crop=faces&amp;fit=crop&amp;w=32&amp;h=32"
+                  width="32" height="32" role="presentation"
+                  alt="Always looking for the next adventure to capture the next shot. Seize the day. Sony A7 IV . There are more images behind my Unplash, for commercial projects please contact me.  John 3:16"
+                  title="Jonny Gios">
+              </a>
+              <button class="card__photo-like">31</button>
+              <a class="card__download"
+                href="https://unsplash.com/photos/JIqH1ps4eK8/download?ixid=MnwzMDE0MzF8MHwxfGFsbHwxMjN8fHx8fHwyfHwxNjU0NTI0MjYy"
+                download="" target="_blank"></a>
+            </a></li>
+        </ul> -->
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
